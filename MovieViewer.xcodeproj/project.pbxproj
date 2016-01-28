@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9C94918F1C55965C001E59AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C94918E1C55965C001E59AB /* AppDelegate.swift */; };
-		9C9491911C55965C001E59AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9491901C55965C001E59AB /* ViewController.swift */; };
 		9C9491941C55965C001E59AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9491921C55965C001E59AB /* Main.storyboard */; };
 		9C9491961C55965C001E59AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9491951C55965C001E59AB /* Assets.xcassets */; };
 		9C9491991C55965C001E59AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9491971C55965C001E59AB /* LaunchScreen.storyboard */; };
+		9C9491A11C5596F3001E59AB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9491A01C5596F3001E59AB /* MoviesViewController.swift */; };
+		9CD1518A1C59A4490033BA21 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD151891C59A4490033BA21 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C94918B1C55965C001E59AB /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C94918E1C55965C001E59AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C9491901C55965C001E59AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C9491931C55965C001E59AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C9491951C55965C001E59AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C9491981C55965C001E59AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C94919A1C55965C001E59AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9491A01C5596F3001E59AB /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		9CD151891C59A4490033BA21 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		9C94918D1C55965C001E59AB /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				9CD1518B1C59C89B0033BA21 /* View controllers */,
+				9CD151881C59A3FA0033BA21 /* Views */,
 				9C94918E1C55965C001E59AB /* AppDelegate.swift */,
-				9C9491901C55965C001E59AB /* ViewController.swift */,
 				9C9491921C55965C001E59AB /* Main.storyboard */,
 				9C9491951C55965C001E59AB /* Assets.xcassets */,
 				9C9491971C55965C001E59AB /* LaunchScreen.storyboard */,
 				9C94919A1C55965C001E59AB /* Info.plist */,
 			);
 			path = MovieViewer;
+			sourceTree = "<group>";
+		};
+		9CD151881C59A3FA0033BA21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CD151891C59A4490033BA21 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9CD1518B1C59C89B0033BA21 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C9491A01C5596F3001E59AB /* MoviesViewController.swift */,
+			);
+			name = "View controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C9491911C55965C001E59AB /* ViewController.swift in Sources */,
 				9C94918F1C55965C001E59AB /* AppDelegate.swift in Sources */,
+				9C9491A11C5596F3001E59AB /* MoviesViewController.swift in Sources */,
+				9CD1518A1C59A4490033BA21 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +304,7 @@
 				9C94919F1C55965C001E59AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
