@@ -16,12 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dc6eyXpzi.png" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-Z0-Qm9">
+                                <rect key="frame" x="0.0" y="97" width="600" height="503"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poppin' Popcorn..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM8-5m-btA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Bca-Xf-Gp6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99837644790000002" blue="0.20549231849999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PbM-Z0-Qm9" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="2tg-xT-Kmx"/>
+                            <constraint firstItem="PbM-Z0-Qm9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3Nw-eo-j0g"/>
+                            <constraint firstItem="PbM-Z0-Qm9" firstAttribute="leading" secondItem="GM8-5m-btA" secondAttribute="leading" id="6SJ-3n-u89"/>
+                            <constraint firstItem="PbM-Z0-Qm9" firstAttribute="trailing" secondItem="GM8-5m-btA" secondAttribute="trailing" id="Ni5-HN-9pW"/>
+                            <constraint firstAttribute="trailing" secondItem="PbM-Z0-Qm9" secondAttribute="trailing" id="ObQ-su-uKd"/>
+                            <constraint firstItem="PbM-Z0-Qm9" firstAttribute="top" secondItem="GM8-5m-btA" secondAttribute="bottom" constant="41" id="fa6-mQ-Kcq"/>
+                            <constraint firstItem="GM8-5m-btA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zNh-sm-diy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="269" y="126"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dc6eyXpzi.png" width="1024" height="1024"/>
+    </resources>
 </document>
